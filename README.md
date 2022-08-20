@@ -18,4 +18,4 @@ http://image-filter-victor.us-east-1.elasticbeanstalk.com
 
 ### Elastic Beanstalk Screenshot
 
-> Todo: Add image
+![Healthy Server](./deployment_screenshots/elastic_beanstalk_deployment_photo.png)
