@@ -39,7 +39,7 @@ import { filterImageFromURL, deleteLocalFiles } from './util/util';
         try {
             const filtered = await filterImageFromURL(image_url);
             res.sendFile(filtered);
-            res.on('finish', () => deleteLocalFiles([filtered]));
+            return res.on('finish', () => deleteLocalFiles([filtered]));
         } catch (e) {
             return res.status(500).send({
                 message: 'Internal Server Error',
